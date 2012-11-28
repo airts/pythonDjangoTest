@@ -24,7 +24,11 @@ def home(request):
     dd = dict((x,x) for x in list)
 
 
-
-
     return HttpResponse(content)
+
+def every(request,par):
+    return HttpResponse('<div>every</div>')
+
+def concrete(request):
+    return HttpResponse('<div>concrete</div>')
 
